@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="atmmo">ATM Money Dispenser</h1>
+    </div> 
+
+    <div class="box">
+        <div class="atm">
+            <h2 class="wel">Welcome to ATM</h2>
+            <h4>Enter the amount</h4>
+            <div>
+                <input type="number" placeholder="Enter the amount" class="amount-input"> 
+            </div>
+            <div>
+                <button class="get">Get Money</button>
+            </div>
+        </div>
+
+        <div class="nav">
+            <h6>You will get the following amount:</h6>
+            <ul>
+                <hr class="hr">
+                <li>1 note of Rs 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 notes of Rs 2</li>
+                <hr class="hr">
+                <li>1 note of Rs 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 note of Rs 10</li>
+                <hr class="hr">
+                <li>1 note of Rs 20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 note of Rs 50</li>
+                <hr class="hr">
+                <li>1 note of Rs 100 &nbsp;&nbsp;&nbsp; 1 note of Rs 200</li>
+                <hr class="hr">
+                <li>2 notes of Rs 500 &nbsp;&nbsp; 3 notes of Rs 2000</li>
+                <hr class="hr">
+            </ul>
+            <h6>Total notes dispensed: 12</h6>
+            <hr class="hr">
+        </div>
+    </div>
+
+    <h6 class="diy">Screen Details:</h6>
+    <p class="pera">The screen above shows the distinct elements needed as part of the user interface. The left pane
+        contains an input box and the "Get Money" <br>button apart from the heading. The content for the right pane is
+        dynamically generated based on the computed values.</p>
+
+    <h6 class="diy">Core Functionality (Workflow)</h6>
+    <p class="pera">The user enters the amount (whole numbers only) needed in the text field. On clicking "Get Money," 
+        the app computes the least number of notes needed to dispense <br>the exact amount. The possible denominations 
+        are Rs 1, 2, 5, 10, 20, 50, 100, 200, and 2000. The computed count is displayed on the right panel, as shown 
+        in the image above.</p>
+    <script src="script.js"></script>
+</body>
+</html>

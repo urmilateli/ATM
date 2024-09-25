@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    background-color: rgb(77, 77, 237);
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.atmmo {
+    font-weight: bolder;
+    color: antiquewhite;
+    margin: 0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    max-width: 70%;
+    background-color: beige;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.atm, .nav {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: auto;
+    background-color: white;
+}
+
+.wel, .nav h6 {
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.amount-input {
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+} 
+
+.get {
+    width: 95%;
+    padding: 10px;
+    color: rgb(245, 245, 245);
+    background-color: rgb(144, 144, 234);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.get:hover {
+    background-color: darkblue;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.pera {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.diy {
+    font-size: medium;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .atm, .nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .get {
+        padding: 8px;
+    }
+
+    .amount-input {
+        width: 100%;
+    }
+
+    .diy {
+        font-size: small;
+    }
+}
